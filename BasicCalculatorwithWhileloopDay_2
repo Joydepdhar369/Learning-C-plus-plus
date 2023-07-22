@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+using namespace std;
+void Calculator();
+int main()
+{
+Calculator();
+}
+void Calculator()
+{
+    int i=0;
+    while(i=1){
+    int a;
+    cin>>a;
+    char b;
+    cin>>b;
+    int c;
+    cin>>c;
+    if(b=='+'){
+        int add;
+        add=a+c;
+        cout<<"ADD: "<<add;
+    }
+    else if(b=='-'){
+        int sub;
+        sub= a-c;
+        cout<<"Sub: "<<sub;
+    }
+    else if(b=='*')
+    {
+        int mult;
+        mult = a*c;
+        cout<<"Multi: "<<mult;
+    }
+    else if(b=='/'){
+        if(c==0)
+        {
+            cout<<"Math Error";
+        }
+        else{
+            float dev;
+        dev =a/c;
+        //if()
+        cout<<"Div: "<<dev;
+        }
+    }
+    else{
+        cout<<"Second Day program....";
+    }
+}
+}
