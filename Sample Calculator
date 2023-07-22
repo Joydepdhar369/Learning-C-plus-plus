@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+void calculator();
+int main()
+{
+   calculator();
+
+}
+
+void calculator()
+{
+    float a;
+    float b;
+    char opera;
+    float result;
+    for(;;)
+    {
+
+
+    cout<<"\ninput : ";
+    cin>>a;
+    cin>>opera;
+    cin>>b;
+    switch(opera)
+    {
+    case '+' :
+        result = a+b;
+        cout<<" = "<<result;
+    break;
+        case '-' :
+        result = a-b;
+        cout<<" = "<<result;
+    break;
+        case '*' :
+        result = a*b;
+        cout<<" = "<<result;
+    break;
+        case '/' :
+        result = a/b;
+        cout<<" = "<<result;
+    break;
+        default:
+            cout<<"invalid"<<endl;
+    break;
+
+
+
+
+    }
+    }
+}
